@@ -1,0 +1,25 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+class AnimalNumber
+{
+private:
+    int my_num;
+public:
+    AnimalNumber(int x)
+    {
+        my_num = x;
+    }
+    
+};
+
+
+int main() {
+    vector<AnimalNumber> v;
+    AnimalNumber an1(5);
+    AnimalNumber an2(10);
+    v.push_back(an1);
+    v.push_back(an2);
+    cout<<"hello";
+    return 0;
+}
