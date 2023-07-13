@@ -1,0 +1,2 @@
+fout.open(FSTREAM TEXT.txt)
+End
