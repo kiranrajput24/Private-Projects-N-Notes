@@ -8,17 +8,17 @@ that is used in html
 ## properties use for Navigating node
 
 * parentNode  
-firstChild  
-lastChild  
-childNodes --> array of child nodes  
-previousSibling  
-nextSibling  
+* firstChild  
+* lastChild  
+* childNodes --> array of child nodes  
+* previousSibling  
+* nextSibling  
 
 ## properties for Navigating elements Nodes [most used] {better ignore text node , comments node}
 
-parentElement  
-firstElementChild  
-lastElementChild  
-Children --> array of child elements  
-previousElementSibling  
-nextElementSibling  
+* parentElement  
+* firstElementChild  
+* lastElementChild  
+* Children --> array of child elements  
+* previousElementSibling  
+* nextElementSibling  
