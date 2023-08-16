@@ -1,6 +1,6 @@
-## DOM --> Document OBJECT MODEL
+## DOM --> Document OBJECT MODEL 
 
-document is object and object is node
+document,elements is object and object is node. everything in DOM tree is node
 
 Nodes are html elements, text node and comments node
 that is used in html
