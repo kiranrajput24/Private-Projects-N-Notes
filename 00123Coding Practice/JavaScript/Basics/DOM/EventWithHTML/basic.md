@@ -7,7 +7,7 @@ that is used in html
 
 ## properties use for Navigating node
 
-parentNode  
+* parentNode  
 firstChild  
 lastChild  
 childNodes --> array of child nodes  
