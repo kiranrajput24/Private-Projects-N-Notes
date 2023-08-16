@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Try It Yourself</title>
+  </head>
+  <body>
+    <form
+      action="https://codeliber.com/form-action.php"
+      onsubmit=" return validate()"
+    >
+      <!-- return false for not submit in any condition -->
+      <label
+        >Age : <input type="number" name="age" min="18" max="65" required
+      /></label>
+      <input type="submit" />
+    </form>
+    <script>
+      function validate() {
+        console.log(this);
+        return false; //if change to true then form will be submitted
+      }
+    </script>
+  </body>
+</html>

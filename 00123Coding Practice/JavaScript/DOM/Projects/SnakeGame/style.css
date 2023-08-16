@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 60, 0, 0.794), rgba(0, 0, 255, 0.994), rgb(255, 0, 43));
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(20, 1fr) /repeat(20, 1fr);
+    background-color: rgba(0, 128, 0, 0.788);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+div {
+    height: 15px;
+    width: 15px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+#start {
+    background-color: rgba(255, 145, 0, 0.732);
+    padding: 0 0.3rem;
+    border-radius: 0.50rem;
+}
+
+#start:hover {
+    scale: 1.1;
+    cursor: pointer;
+    background-color: rgb(133, 227, 205);
+}
+
+.snake {
+    background-color: greenyellow;
+}
+
+.apple {
+    background-color: red;
+}

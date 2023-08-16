@@ -1,0 +1,44 @@
+body{
+  height: 100vh;
+  background-color: white;
+}
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+#testimonial{
+  background-color: aliceblue;
+  padding: 2rem;;
+}
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background-color: rgb(240, 227, 240);
+}
+
+.profile-img {
+  height: 100px;
+  border-radius: 50%;
+}
+
+.clinet-logo {
+  height: 1.5rem;
+  width: 9rem;
+  margin: 1rem;
+}

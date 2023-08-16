@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Practice</title>
+    <style>
+      .blue-card {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+      }
+      .big-card {
+        height: 120px;
+        width: 120px;
+      }
+    </style>
+  </head>
+
+  <body
+    style="
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+    "
+  >
+    <buttun type="button" id="btn1">Click me</buttun>
+    <script>
+      document.getElementById("btn1").addEventListener("click", () => {
+        var div1 = document.createElement("div");
+        document.body.append(div1);
+        div1.style.height = "200px";
+        div1.style.backgroundColor = "red";
+        div1.style.margin = "1rem";
+        console.log("hello");
+      });
+    </script>
+
+    <label>
+      choose your city :
+      <select name="city" id="city">
+        <option value="Delhi">Delhi</option>
+        <option value="Faridabad">Faridabad</option>
+        <option value="Banglore">Banglore</option>
+        <option value="Gurugram">Gurugram</option>
+        <option value="Noida">Noida</option>
+        <option value="Hyderabad">Hyderabad</option>
+      </select>
+    </label>
+
+    <p>Your City : <span id="selected_city"></span></p>
+    <script>
+      let city = document.querySelector("#city");
+
+      city.addEventListener("change", () => {
+        document.getElementById("selected_city").innerHTML = city.value;
+      });
+
+      city.addEventListener("mouseover", () => {
+        document.getElementById("selected_city").innerHTML = "Select Value";
+      });
+    </script>
+
+    <div class="div1 blue-card" id="div1"></div>
+
+    <!-- <div class="blue-card"" id="div2"></div>
+    </div> -->
+    <script>
+      // var div2 =   document.getElementById("div2")
+      var box = document.getElementById("div1");
+
+      box.addEventListener("mouseover", () => {
+        // div2.style.display = "none";
+        box.classList.add("big-card");
+      });
+
+      box.addEventListener("mouseout", () => {
+        //    div2.style.display = "block";
+        box.classList.remove("big-card");
+      });
+    </script>
+
+    <textarea name="area" id="area" cols="30" rows="10"></textarea>
+    <script>
+      var area = document.getElementById("area");
+      area.addEventListener("focus", () => {
+        area.style.backgroundColor = "yellow";
+      });
+
+      area.addEventListener("blur", () => {
+        area.style.backgroundColor = "white";
+      });
+    </script>
+
+    <b>Window Height : <span id="height">Tweak screen size</span> </b>
+    <b>Window Width : <span id="width">tweak screen size</span> </b>
+
+    <script>
+      window.addEventListener("resize", () => {
+        document.getElementById("height").innerHTML = window.innerHeight;
+        document.getElementById("width").innerHTML = window.innerWidth;
+      });
+    </script>
+    <script src="./Event.js"></script>
+  </body>
+</html>

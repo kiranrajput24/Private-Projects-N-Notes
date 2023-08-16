@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./Event.js"></script>
+    <style>
+        .box {
+            height: 15rem;
+            width: 15rem;
+            background-color: red;
+        }
+
+        .addbox {
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <!-- 1 -->
+    <p class="para1">Write Your Thoughts below</p>
+    <input id="input1" type="text">
+    <!-- 2 -->
+    <div class="box">
+        <button id="btn">+=</button>
+    </div>
+    <!-- 3 -->
+    <form id="student-form" action="">
+        <button type="submit"></button>
+    </form>
+<!-- 4 -->
+<textarea name="textfield1" id="textarea" cols="30" rows="10"></textarea>
+    <!-- 
+
+     -->
+
+    <!--  -->
+    <!--  -->
+    <!-- Script -->
+    <script>
+        var btn1 = document.querySelector("#btn");
+        btn1.onclick = function (e) {
+            console.log("Btn Clicked");
+            document.querySelector(".body").style.backgroundColor = "yellow";
+        }
+
+
+        // 1
+        var input1 = document.querySelector("#input1")
+        input1.addEventListener('change', (e) => {
+            console.log(e)
+            document.getElementsByClassName("para1")[0].textContent = input1.value;
+        })
+
+        var box1 = document.querySelector(".box")
+        box1.onmousedown = function () {
+            box1.classList.add("addbox")
+        }
+        box1.onmouseup = function () {
+            box1.classList.remove("addbox")
+        }
+
+        // box1.onmousemove = function () {
+        //     box1.style.backgroundColor='orange'
+        // }
+
+        var form1 = document.querySelector("#student-form")
+        form1.onsubmit = function () {
+            document.querySelector(".box").style.backgroundColor = "black"
+        }
+
+        // window.onload = () => {
+        //     alert("Site loaded")
+        // }
+
+        window.onunload = () => {
+            window.write("WHY LEAVE US BRO!!!")
+        }
+
+
+        var text1 =  document.querySelector("#textarea");
+
+        text1.addEventListener('keydwon', (e) =>{
+            box1.style.backgroundColor = 'yellow'
+            alert(`You pressed ${e.key}`)
+        }
+        )
+        
+        
+        window.onscroll = () => {
+            var p2 = document.createElement("p")
+            var newdiv1 = document.createElement("div")
+            newdiv1.textContent = "Added"
+            newdiv1.classList.add("box")
+            document.body.append(p2)
+            document.body.append(newdiv1)
+            console.log(p2)
+        }
+    </script>
+</body>
+
+</html>
