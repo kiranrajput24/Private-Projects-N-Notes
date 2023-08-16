@@ -7,12 +7,12 @@ that is used in html
 
 ## properties use for Navigating node
 
-parentNode
-firstChild
-lastChild
-childNodes --> array of child nodes
-previousSibling
-nextSibling
+parentNode  
+firstChild  
+lastChild  
+childNodes --> array of child nodes  
+previousSibling  
+nextSibling  
 
 ## properties for Navigating elements Nodes [most used] {better ignore text node , comments node}
 
