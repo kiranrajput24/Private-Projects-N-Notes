@@ -16,9 +16,9 @@ nextSibling
 
 ## properties for Navigating elements Nodes [most used] {better ignore text node , comments node}
 
-parentElement
-firstElementChild
-lastElementChild
-Children --> array of child elements
-previousElementSibling
-nextElementSibling
+parentElement  
+firstElementChild  
+lastElementChild  
+Children --> array of child elements  
+previousElementSibling  
+nextElementSibling  
