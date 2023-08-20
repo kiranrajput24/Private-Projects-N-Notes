@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Try It Yourself</title>
+  </head>
+  <body>
+    <div id="demo"</ul></div>
+
+    <script>
+    var div = document.querySelector('#demo')
+      var element1 = document.createElement("p");
+      var element2 = document.createElement("p");
+      var element3 = document.createElement("p");
+      var textNode1 = document.createTextNode("Lorem1 ipsum dolor sit amet.");
+      var textNode2= document.createTextNode("Lorem2 ipsum dolor sit amet.");
+      var textNode3 = document.createTextNode("Lorem3 ipsum dolor sit amet.");
+
+      // appendChild method return the appended child and
+    //    can append only one child
+    // it is a old way
+      element1.appendChild(textNode1);
+      console.log("🚀 ~ file: append.html:30 ~ element1:", element1)
+      div.appendChild(element1)
+
+      element2.appendChild(textNode2);
+      element3.appendChild(textNode3);
+
+      // appendChild method. It can append multiple node to parent node 
+      // it is a New way
+
+      div.append(element2,element3,"Some text can also added")
+
+    //   prepend use to add nodes in first 
+    //  same like append 
+
+    // div.prepend(element2,element3,"Some text can also added")
+     
+    </script>
+  </body>
+</html>

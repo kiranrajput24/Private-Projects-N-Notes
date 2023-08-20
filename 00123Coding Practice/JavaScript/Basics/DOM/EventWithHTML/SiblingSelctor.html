@@ -4,9 +4,6 @@
     <title>Try It Yourself</title>
   </head>
   <body>
-    <p>hghguyjhg</p>
-    <!--  -->
-    igyuhg
     <div id="container">
       <h1>Lorem Ipsum</h1>
       <p id="demo">
@@ -17,15 +14,14 @@
     </div>
 
     <script>
-      // let's select the <div> element
-      var divElement = document.getElementById("container");
+      // let's select the <p> element
+      var pElement = document.getElementById("demo");
 
-      // let's select the <div>'s last child element and style it
-      divElement.lastElementChild.style.color = "green";
-      divElement.lastElementChild.style.textDecoration =
+      // let's select the <h1> element and style it
+      pElement.previousElementSibling.style.color = "green";
+      pElement.previousElementSibling.style.textDecoration =
         "blue underline overline wavy";
-
-        console.log("🚀 ~ file: 1.html:27 ~ divElement.firstElementChild.textContent:", divElement.previousSibling)
+      pElement.nextElementSibling.style.color = "red";
     </script>
   </body>
 </html>
