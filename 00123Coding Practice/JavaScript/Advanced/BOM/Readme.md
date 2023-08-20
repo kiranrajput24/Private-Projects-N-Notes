@@ -5,11 +5,12 @@
 # Window objects Properties
 
 - innerHeight
-  innerWidth
 
-Objects
-document
-Location
-screen
-history
-navigator
+* innerWidth
+
+* Objects
+* document
+* Location
+* screen
+* history
+* navigator
