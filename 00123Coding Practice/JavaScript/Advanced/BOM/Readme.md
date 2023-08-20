@@ -1,14 +1,13 @@
-## BOM --> Browser Object model
+# BOM --> Browser Object model
 
 - Window Object represents current browser window
 
-# Window objects Properties
+## Window objects Properties
 
 - innerHeight
-
 * innerWidth
 
-* Objects
+###  Objects
 * document
 * Location
 * screen
