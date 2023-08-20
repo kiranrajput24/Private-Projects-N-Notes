@@ -4,8 +4,8 @@
 
 # Window objects Properties
 
-** innerHeight
-innerWidth
+- innerHeight
+  innerWidth
 
 Objects
 document
