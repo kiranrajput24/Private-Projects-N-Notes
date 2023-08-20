@@ -4,7 +4,7 @@
 
 # Window objects Properties
 
-innerHeight
+** innerHeight
 innerWidth
 
 Objects
