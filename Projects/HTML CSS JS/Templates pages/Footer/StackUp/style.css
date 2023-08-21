@@ -1,0 +1,137 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.hide {
+    transition: cubic-bezier();
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.showHide {
+    transition: opacity 1s ease-out;
+    opacity: 1;
+    height: auto;
+
+}
+
+.flex-container {
+    position: absolute;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.hamburger {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.close-navbar {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.navbar {
+    width: 11rem;
+    position: fixed;
+    display: none;
+    z-index: 3;
+    top: 0;
+    padding: 15px 0 0 25px;
+}
+
+.top-Logo-stackup {
+    margin: auto;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.flex-inner-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.crossBtn {
+    margin: -0.5rem 0.2rem 0 0;
+}
+
+.user {
+    margin: 2rem 0 1rem 0.2rem;
+}
+
+.user>* {
+    line-height: 0.25rem;
+    font-size: 0.65rem;
+    opacity: 80%;
+
+}
+
+.user :first-child {
+    font-size: 0.8rem;
+    opacity: 100%;
+}
+
+.flex-logo-text {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    margin: 0.7rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.header-hover {
+    display: none;
+}
+
+.sub-section {
+    padding-left: 8px;
+}
+
+.sub-section .logo-img {
+    height: 22px;
+}
+
+.sub-section p {
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+.flex {
+    display: flex;
+}
+
+.rotate180 {
+    transform: rotate(180deg);
+}
+
+
+@media(min-width:1050px) {
+
+    .flex-container {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        height: 100vh;
+    }
+
+    .crossBtn {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+
+    }
+}

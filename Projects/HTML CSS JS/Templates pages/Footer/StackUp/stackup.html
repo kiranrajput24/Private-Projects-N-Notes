@@ -4,94 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StackUp Header</title>
-    <style>
-      body {
-        padding: 0;
-        margin: 0;
-      }
-      .flex-container {
-        position: absolute;
-        height: 65px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        z-index: 2;
-        background-color: rgb(205, 176, 176);
-      }
-      .hamburger {
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-      }
-      .close-navbar{
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-      }
-      .navbar {
-        width: 11rem;
-        position: absolute;
-        /* display: none; */
-        z-index: 3;
-        top: 0;
-        background-color: pink;
-        padding: 15px 0 0 25px;
-      }
-      .top-Logo-stackup {
-        margin: auto;
-        padding-right: 20px;
-        cursor: pointer;
-      }
-      .flex-inner-container {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .user {
-        height: 80%;
-      }
-      .user > *{
-        line-height: 0.2rem;
-        
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <nav>
       <div class="flex-container">
         <button onclick="openNavbar()" class="hamburger">
-          <img src="./assets/headerHamburgerStackup.svg" alt="header Hamburger" />
+          <img class="hamburger" src="./assets/headerHamburgerStackup.svg" alt="header Hamburger" />
         </button>
-        <div class="navbar">
-            <div class="flex-inner-container">
-              <img src="./assets/Logostackup.svg" height="28" alt="Logo stackup" />
-              <button onclick="closeNavbar()" class="close-navbar">
-              <img src="./assets/Cross.svg" height="18" alt="" />
-            </div>
-          
-            <div class="user">
-                <p>Panda</p>
-                <p>Current: US$15.00</p>
-                <p>Timezone: Asia/Calcutta</p>
-            </div>
-        </div>
         <img
-          class="top-Logo-stackup"
-          src="./assets/TopSmLogostackup.svg"
-          alt=""
-        />
-      </div>
-    </nav>
-    <script>
-      var navbar = document.querySelector(".navbar");
-      function openNavbar() {
-        navbar.style.display = "block";
-      }
+        class="top-Logo-stackup"
+        src="./assets/TopSmLogostackup.svg"
+        alt />
+    </div>
 
-      function closeNavbar() {
-        navbar.style.display = "none";
+        <div class="navbar">
+          <div class="flex-inner-container">
+            <img src="./assets/Logostackup.svg" height="28" alt="Logo stackup" />
+            <button onclick="closeNavbar()" class="close-navbar">
+              <img class="crossBtn" src="./assets/Cross.svg" height="18" alt />
+            </div>
 
-      }
+            <div class="user">
+              <p>Panda</p>
+              <p>Current: US$1095.00</p>
+              <p>Timezone: Asia/Calcutta</p>
+            </div>
+
+            <div class="flex-logo-text">
+              <img src="./assets/Home.svg" alt>
+              <p class="text">Home</p>
+              <img alt>
+            </div>
+
+            <div class="flex-logo-text">
+              <img src="./assets/Profile.svg" alt>
+              <p class="text">Profile</p>
+              <img alt>
+            </div>
+
+            <div class="flex-logo-text-toggleEarn flex">
+              <img src="./assets/Payment-Outline.svg" alt>
+              <p class="text">Earn</p>
+              <img style="margin: auto;" class="rotate180"
+                src="./assets/UpArrowRed.svg" height="8" alt>
+            </div>
+            <div class="sub-section">
+
+              <div class="flex-logo-text">
+                <img class="logo-img" src="./assets/Campaigns.svg" alt>
+                <p class="text">Campaigns</p>
+                <img alt>
+              </div>
+
+              <div id="EarnSubSection" class="hide">
+                <div class="flex-logo-text">
+                  <img class="logo-img" src="./assets/quest.svg" alt>
+                  <p class="text">Quests</p>
+                  <img alt>
+                </div><div class="flex-logo-text">
+                  <img class="logo-img" src="./assets/money.svg" alt>
+                  <p class="text">Bounties</p>
+                  <img alt>
+                </div><div class="flex-logo-text">
+                  <img class="logo-img" src="./assets/progress.svg" alt>
+                  <p class="text">My Progress</p>
+                  <img alt>
+                </div>
+              </div>
+
+            </div>
+            <div class="flex-logo-text">
+              <img src="./assets/learn.png" style="padding-top: 7px;"
+                height="24" width="24" alt>
+              <p class="text">Learn</p>
+              <img alt>
+            </div>
+
+            <div class="flex-logo-text">
+              <img src="./assets/calender.svg" alt>
+              <p class="text">Calendar</p>
+              <img alt>
+            </div>
+            <div class="flex-logo-text">
+              <img src="./assets/Help.svg" alt>
+              <p class="text">Help</p>
+              <img alt>
+            </div>
+
+            <div class="flex-logo-text-toggleTC flex">
+              <img src="./assets/T&cs.svg" alt>
+              <p class="text">T&Cs</p>
+              <img style="margin: auto;" class="rotate180"
+                src="./assets/UpArrowRed.svg" height="8" alt>
+            </div>
+            <div class="sub-section">
+              <div id="TcSubSection" class="hide">
+                <div class="flex-logo-text">
+                  <img class="logo-img" src="./assets/T&cs.svg" height="8" alt>
+                  <p class="text">
+                    Terms of Service
+                   </p>
+                  <img alt>
+                </div><div class="flex-logo-text">
+                  <img class="logo-img" src="./assets/T&cs.svg" height="8" alt>
+                  <p class="text">Privacy Policy</p>
+                  <img alt>
+                </div><div class="flex-logo-text">
+                  <img class="logo-img" src="./assets/T&cs.svg"  height="8"alt>
+                  <p class="text"> Terms of Use</p>
+                  <img alt>
+                </div>
+              </div>
+            </div>
+            <p style="font-size: 0.7rem; opacity: 80%; line-height: 2rem; ">
+              StackUp © 2023</p>
+          </div>
+
+        
+      </nav>
+
+      <script src="index.js">
     </script>
   </body>
 </html>
+
+
