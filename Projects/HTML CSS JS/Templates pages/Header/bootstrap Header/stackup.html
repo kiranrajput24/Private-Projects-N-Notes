@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StackUp Header</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #0a0a0a;
+        color: white;
+        z-index: 2;
+      }
+      .flex-container {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: transparent;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .list {
+        gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .search-input {
+        margin-left: auto;
+      }
+      input {
+        width: 100%;
+      }
+
+      @media (max-width: 990px) {
+        .flex-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .search-input {
+          margin-left: 0;
+          width: 70%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="flex-container">
+        <div class="flex">
+          <img src="./bootstrap-logo.png" height="32" alt="" />
+        </div>
+        <div class="flex">
+          <ul class="flex list">
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>FAQs</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="flex search-input">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="flex">
+          <button style="padding: 0.2rem; margin: 0.3rem">Login</button>
+          <button
+            style="padding: 0.2rem; margin: 0.3rem; background-color: #fac92b"
+          >
+            Sign-up
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
