@@ -1,0 +1,25 @@
+body {
+    /* background-color: green; */
+}
+
+.big-text {
+    font-size: 8rem;
+    color: yellow;
+}
+
+.bg {
+    background-color: aliceblue;
+}
+
+button {
+    font-size: 3rem;
+    background: #000;
+}
+
+a {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 6rem;
+}
