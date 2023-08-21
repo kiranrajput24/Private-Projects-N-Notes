@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Try It Yourself</title>
+  </head>
+  <body>
+    <button onclick="makeRequest()">Make Request</button>
+    <div id="demo"></div>
+
+    <script>
+      // create XMLhttpRequest
+      var httpRequest = new XMLHttpRequest();
+
+      function makeRequest() {
+        // add event listener
+        httpRequest.onreadystatechange = writeContent;
+        httpRequest.open("Get", "https://codeliber.com/test.php");
+        httpRequest.send();
+      }
+
+      //   call this function each time when readyState change
+      function writeContent() {
+        // readyState
+        // 0: request not initialized
+        // 1: server connection established
+        // 2: request received
+        // 3: processing request
+        // 4: request finished and response is ready
+        if (httpRequest.readyState == 4) {
+          if (httpRequest.status == 200) {
+            document.querySelector("#demo").innerHTML =
+              httpRequest.responseText;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

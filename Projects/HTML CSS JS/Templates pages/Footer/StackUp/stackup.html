@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StackUp Header</title>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+      .flex-container {
+        position: absolute;
+        height: 65px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        background-color: rgb(205, 176, 176);
+      }
+      .hamburger {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+      }
+      .close-navbar{
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+      }
+      .navbar {
+        width: 11rem;
+        position: absolute;
+        /* display: none; */
+        z-index: 3;
+        top: 0;
+        background-color: pink;
+        padding: 15px 0 0 25px;
+      }
+      .top-Logo-stackup {
+        margin: auto;
+        padding-right: 20px;
+        cursor: pointer;
+      }
+      .flex-inner-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .user {
+        height: 80%;
+      }
+      .user > *{
+        line-height: 0.2rem;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="flex-container">
+        <button onclick="openNavbar()" class="hamburger">
+          <img src="./assets/headerHamburgerStackup.svg" alt="header Hamburger" />
+        </button>
+        <div class="navbar">
+            <div class="flex-inner-container">
+              <img src="./assets/Logostackup.svg" height="28" alt="Logo stackup" />
+              <button onclick="closeNavbar()" class="close-navbar">
+              <img src="./assets/Cross.svg" height="18" alt="" />
+            </div>
+          
+            <div class="user">
+                <p>Panda</p>
+                <p>Current: US$15.00</p>
+                <p>Timezone: Asia/Calcutta</p>
+            </div>
+        </div>
+        <img
+          class="top-Logo-stackup"
+          src="./assets/TopSmLogostackup.svg"
+          alt=""
+        />
+      </div>
+    </nav>
+    <script>
+      var navbar = document.querySelector(".navbar");
+      function openNavbar() {
+        navbar.style.display = "block";
+      }
+
+      function closeNavbar() {
+        navbar.style.display = "none";
+
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Try It Yourself</title>
+  </head>
+  <body>
+    <button onclick="sendPostRequest()">
+      Send POST Request With Information
+    </button>
+    <p id="demo"></p>
+
+    <script>
+      var httpRequest = new XMLHttpRequest();
+
+      function sendPostRequest() {
+        httpRequest.onreadystatechange = writeContent;
+
+        httpRequest.open("POST", "https://codeliber.com/test-server.php");
+        httpRequest.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
+        httpRequest.send("firstName=Kiran&lastName=Kumar");
+      }
+
+      function writeContent() {
+        if (httpRequest.readyState === 4) {
+          if (httpRequest.status == 200) {
+            document.getElementById("demo").innerHTML =
+              httpRequest.responseText;
+          } else {
+            alert("There was a problem with the request.");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

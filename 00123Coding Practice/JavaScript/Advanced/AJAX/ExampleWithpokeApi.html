@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h4 id="poke"></h4>
+    <button onclick="sendRequest()">Show Pokemon data</button>
+    <script>
+      // AJAX
+      var httpRequest = new XMLHttpRequest();
+      function sendRequest() {
+        httpRequest.onreadystatechange = handleResponse;
+        httpRequest.open("get", "https://pokeapi.co/api/v2/pokemon");
+        httpRequest.send();
+      }
+      function handleResponse() {
+        if (httpRequest.readyState == 4) {
+          if (httpRequest.status == 200) {
+            let response = JSON.parse(httpRequest.responseText);
+            console.log(response);
+            document.querySelector("#poke").textContent =
+              httpRequest.responseText;
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
