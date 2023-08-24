@@ -4,7 +4,7 @@ This is a list of links including the project GitHub repos as well as API docs a
  
 
 GitHub Repositories
-JavaScript Sandbox: https://github.com/bradtraversy/javascript-sandbox
+[JavaScript Sandbox: ]{https://github.com/bradtraversy/javascript-sandbox}
 Shopping List: https://github.com/bradtraversy/shopping-list
 Tracalorie: https://github.com/bradtraversy/tracalorie
 Tracalorie Webpack Branch: https://github.com/bradtraversy/tracalorie/tree/webpack
