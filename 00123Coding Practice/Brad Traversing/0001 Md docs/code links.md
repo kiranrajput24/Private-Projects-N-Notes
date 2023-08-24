@@ -15,7 +15,7 @@ Code for all mini-projects and learning modules are in the JavaScript Sandbox
 
 API Docs
 GitHub API: https://developer.github.com/v3/
-TheMovieDB API: https://www.themoviedb.org/documentation/api
+TheMovieDB API: https://www.themoviedb.org/documentation/apihttps://github.com/bradtraversy/javascript-sandbox
 Chuck Norris API: https://api.chucknorris.io/
 JSON Placeholder: https://jsonplaceholder.typicode.com/
 RandomUser API: https://randomuser.me/
