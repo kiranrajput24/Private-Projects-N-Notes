@@ -123,7 +123,11 @@ let friends_name=[
 // 'Jay',
 'Jay',
 // 'Mukesh',
-'Mukesh',
+'Mukesh', if (error.isTtyError) {
+  // Prompt couldn't be rendered in the current environment
+} else {
+  // Something else went wrong
+}
 // 'Naj',
 'Naj',
 // 'Rohit',
