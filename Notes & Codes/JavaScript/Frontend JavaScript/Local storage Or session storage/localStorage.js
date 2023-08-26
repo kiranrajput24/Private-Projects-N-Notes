@@ -14,3 +14,8 @@ let obj = {
 
 localStorage.setItem("objAsString", JSON.stringify(obj)); // set value with key
 console.log(JSON.parse(localStorage.getItem("objAsString")));
+
+// ----------------------------------------
+// Session Storage have same methods different is that data remove when page closed
+
+sessionStorage.setItem("name", "Krishna");
