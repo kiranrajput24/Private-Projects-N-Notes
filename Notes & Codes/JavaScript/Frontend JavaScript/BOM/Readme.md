@@ -30,4 +30,4 @@
 
 #### history
 
-- use for manipulating browser history g
+- use for manipulating browser history 
