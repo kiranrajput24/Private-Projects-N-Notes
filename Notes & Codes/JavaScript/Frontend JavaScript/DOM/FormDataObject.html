@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <select id="priority-input" name="priority" class="form-input">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+      <button type="submit">submit</button>
+    </form>
+    <script>
+      let form = document.querySelector("form");
+
+      function onSubmit2(e) {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const priority = formData.get("priority");
+
+        console.log(priority,formData);
+      }
+
+      form.addEventListener("submit", onSubmit2);
+    </script>
+  </body>
+</html>
