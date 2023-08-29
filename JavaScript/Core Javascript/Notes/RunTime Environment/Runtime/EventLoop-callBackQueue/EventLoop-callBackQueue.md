@@ -2,10 +2,10 @@
 
 js engine has stack and heap
 
-stack --> execution context
-heap --> memory allocation
+- stack --> execution context
+- heap --> memory allocation
 
-we have event loop and call back queue out of js engine.
+we have event loop and callback queue out of js engine.
 that's actually JS runtime environment.
 
 #### The Call Stack
@@ -16,7 +16,7 @@ anything inside Stack execute quickly without wait..
 js file itself main function or anonymous function 
 
 #### synchronous
-when code is synchronous than we do request than wait request to respond
+when code is synchronous if we do request then wait  for respond
 make code execution slow....
 
 #### Why synchronous problem 
@@ -24,12 +24,12 @@ because we run synchronous js code in browser,then until that request not comple
 the browser stuck and not even can perform any operation in browser like not work click btn, scroll etc.
 
 #### solution is asynchronous callback
-js give callback to runtime api that api do that work and 
-when js engine stack free than event loop pop from queue and push to stack 
-finally execution done by js engine.
+js give callback function to runtime api that api do that work and 
+when js engine stack free then event loop pop CBF from queue and push to stack 
+finally CBF execution done by js engine.
 
-threading and other stuff hiding by running c++program
-There web api that are return in c++
+- Threading and other stuff hiding by running c++ program
+- Web api written in c++
 
 #### Concurrency & the event loop
 
@@ -38,14 +38,14 @@ That web browser apis concurrency kick in || put in
 
 
 ##### asynchronous code goes to web apis
-##### when asynchronous code complete assign task {like setTimeout()} or match satisfied condition {like respond receive or user click} than that code push to callback queue
+##### when asynchronous code complete assigned task {like setTimeout()} or match satisfied condition {like respond receive or user click} then that code push to callback queue
 
-note : promise and event callback has higher priority than other. they goes to microtask queue that run push to stack first and other goes to callback 
+note : promise and event callback has higher priority then other. they goes to microtask queue that run push to stack first and other goes to callback 
 
 
 # Event loop
 
-##### Its job is to look at stack and task queue or callback queue continuously. when stack is empty than take first thing from callback queue and push to stack.
+##### Its job is to look at stack and task queue or callback queue continuously. when stack is empty then take first thing from callback queue and push to stack.
 example --> http request, event, setTimeout()
 
 setTimeout() --> not guarantee to run code in given time that is minimum time to get executed.

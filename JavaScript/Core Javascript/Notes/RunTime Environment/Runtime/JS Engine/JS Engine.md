@@ -1,8 +1,15 @@
 # JS Engine
 
-JS engine have not event loop, callback queue and other apis like HTTP, DOM ,setTimeout(), xmlhttprequest 
+### JS engine have not event loop, callback queue and other apis like HTTP, DOM ,setTimeout(), xmlhttprequest 
 
-JS environment {browser, nodejs } provide extra thing to js engine  
+### JS environment {browser, nodejs } provide extra thing to js engine  
+
+### note : interesting fact is that v8 engine have not -->DOM, setTimeout and other apis that we use with browser. when download source code of v8 engine these things not work by source code.
+
+<hr>
+<hr>
+<hr>
+
 
 1<img src="../../assets/runtime/30.jpg" alt="" style="width:700px; margin-left:100px"/> <br>
 2<img src="../../assets/runtime/31.jpg" alt="" style="width:700px; margin-left:100px"/> <br>
