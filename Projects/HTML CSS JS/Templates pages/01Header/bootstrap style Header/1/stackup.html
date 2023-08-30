@@ -11,7 +11,7 @@
         box-sizing: border-box;
         font-family: "Times New Roman", Times, serif;
       }
-      .navbar {
+      .flex-navbar {
         position: fixed;
         display: flex;
         justify-content: center;
@@ -19,6 +19,7 @@
         background-color: #0a0a0a;
         color: white;
         z-index: 2;
+        padding: 0.5rem;
       }
       .flex-container {
         width: 80%;
@@ -38,7 +39,7 @@
         padding: 0;
         margin: 0;
       }
-      .search-input {
+      .search-input-container {
         margin-left: auto;
       }
       input {
@@ -50,15 +51,27 @@
           flex-direction: column;
           align-items: center;
         }
-        .search-input {
+        .search-input-container {
           margin-left: 0;
           width: 70%;
+        }
+      }
+      @media (max-width: 375px) {
+        button,
+        li {
+          font-size: 0.85rem;
+        }
+      }
+      @media (max-width: 350px) {
+        button,
+        li {
+          font-size: 0.7rem;
         }
       }
     </style>
   </head>
   <body>
-    <div class="navbar">
+    <div class="flex-navbar">
       <div class="flex-container">
         <div class="flex">
           <img src="./bootstrap-logo.png" height="32" alt="" />
@@ -72,7 +85,7 @@
             <li>About</li>
           </ul>
         </div>
-        <div class="flex search-input">
+        <div class="flex search-input-container">
           <input type="text" placeholder="Search..." />
         </div>
         <div class="flex">

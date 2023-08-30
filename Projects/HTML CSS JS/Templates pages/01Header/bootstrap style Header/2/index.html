@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StackUp Header</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .flex-navbar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #0a0a0a;
+        color: white;
+        z-index: 2;
+        padding: 0.5rem;
+      }
+      .flex-container {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: transparent;
+      }
+      .hide {
+        display: none;
+      }
+      strong {
+        font-size: 1.4rem;
+        padding: 0 1rem;
+      }
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .list {
+        font-size: 1.2rem;
+        gap: 1.5rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .rotate180 {
+        transform: rotate(180deg);
+      }
+      .drop-list {
+        margin: 8rem auto auto 18rem;
+        position: absolute;
+        background-color: #0a0a0a;
+      }
+      .drop-list li {
+        padding: 0.3rem;
+      }
+      .low-opacity {
+        opacity: 40%;
+      }
+      .search-input-container {
+        margin-left: auto;
+      }
+      input {
+        width: 100%;
+        height: 1.4rem;
+        background-color: rgba(0, 0, 0, 0.349);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.746);
+      }
+      button {
+        color: white;
+        border: 1px solid white;
+        background-color: #0a0a0a;
+        height: 1.5rem;
+        border-radius: 0.1rem;
+      }
+
+      @media (max-width: 990px) {
+        .flex-container {
+          flex-direction: column;
+          align-items: center;
+        }
+        .search-input-container {
+          margin-left: 0;
+          width: 70%;
+        }
+      }
+      @media (max-width: 767px) {
+        .flex-navbar {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+        .flex {
+          flex-direction: column;
+        }
+        .list {
+          gap: 1rem;
+        }
+        .drop-list {
+          margin: 7.5rem auto auto 12rem;
+        }
+      }
+      @media (max-width: 375px) {
+        button,
+        li {
+          font-size: 0.85rem;
+        }
+      }
+      @media (max-width: 350px) {
+        button,
+        li {
+          font-size: 0.7rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-navbar">
+      <div class="flex-container">
+        <div class="flex">
+          <ul class="flex list">
+            <strong>Navbar</strong>
+            <li>Home</li>
+            <li>Features</li>
+            <li id="toggle-list" class="low-opacity">
+              Dropdown
+              <img src="./UpArrowRed.svg" height="8" class="rotate180" />
+            </li>
+            <ul class="list drop-list hide">
+              <li>Pricing</li>
+              <li>FAQs</li>
+              <li>About</li>
+            </ul>
+            <li class="low-opacity">Disabled</li>
+          </ul>
+        </div>
+        <div class="flex search-input-container">
+          <input type="text" placeholder="Search..." />
+        </div>
+        <div class="flex">
+          <button>Search</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      const toggle = document.querySelector("#toggle-list");
+      const arrowIcon = document.querySelector(".rotate180");
+      const list = document.querySelector(".drop-list");
+
+      toggle.addEventListener("click", function () {
+        toggle.classList.toggle("low-opacity");
+
+        arrowIcon.classList.toggle("rotate180");
+        list.classList.toggle("hide");
+      });
+    </script>
+  </body>
+</html>

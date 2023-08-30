@@ -1,4 +1,5 @@
 var navbar = document.querySelector(".navbar");
+var hamburgerIcon = document.querySelector(".hamburger");
 var logoTextContainers = document.querySelectorAll(".flex-logo-text");
 var subsectionContainer1 = document.querySelectorAll(
   ".flex-logo-text-toggleEarn"
@@ -9,11 +10,13 @@ var subsectionContainer2 = document.querySelectorAll(
 var EarnSubSection = document.querySelector("#EarnSubSection");
 
 function openNavbar() {
+  hamburgerIcon.style.display = "none";
   navbar.style.display = "block";
 }
 
 function closeNavbar() {
   navbar.style.display = "none";
+  hamburgerIcon.style.display = "block";
 }
 
 for (let i = 0; i < logoTextContainers.length; i++) {
