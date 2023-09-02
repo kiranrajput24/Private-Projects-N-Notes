@@ -1,0 +1,54 @@
+// shnakar
+smart contract address: 0xFaDa351f9425552A6b02A06d65748aBc63fD7940
+fungible token address: 0x00000000000000000000000000000000001192a8
+NFT address: 0x0000000000000000000000000000000000119351
+topic id:0.0.1151862
+
+
+
+// urmila
+
+smart contract address:0x46Fdd7a445C88A63c3085B5f3794dd14E27e75CB
+fungible token address:0x000000000000000000000000000000000011AAe4
+NFT address:0x000000000000000000000000000000000011aAe7
+topic id: 0.0.1157865
+
+
+//Chinta
+
+smart contract address:0x259C1cBD83e2ebFF697E4921ebB873E0832b43d7
+fungible token address:0x000000000000000000000000000000000011aAe6
+NFT address:0x000000000000000000000000000000000011aAe8
+topic id:0.0.1157913
+
+
+// arun
+
+smart contract address:0x7CF22CFCEA86C7d950217d65034f59b4f59F72fA
+fungible token address:0x000000000000000000000000000000000011AB49
+NFT address:
+topic id:
+
+
+
+
+smart contract address:
+fungible token address:
+NFT address:
+topic id:
+
+
+
+
+
+smart contract address:
+fungible token address:
+NFT address:
+topic id:
+
+
+
+smart contract address:
+fungible token address:
+NFT address:
+topic id:

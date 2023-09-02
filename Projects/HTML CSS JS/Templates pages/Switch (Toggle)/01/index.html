@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        height: 10rem;
+        width: 30rem;
+        background: linear-gradient(
+          rgba(215, 126, 98, 6),
+          rgba(186, 136, 136, 0.772),
+          rgba(173, 54, 228, 0.686)
+        );
+      }
+      .switch-body {
+        height: 3rem;
+        width: 6rem;
+        background-color: gray;
+        border-radius: 2rem;
+      }
+      .switch-icon {
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        border-radius: 50%;
+        background-color: white;
+      }
+      .move {
+        margin: auto;
+        margin-right: 0;
+        transition: all .5s ease;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="switch-body">
+        <div class="switch">
+          <div class="switch-icon"></div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const switchToggle = document.querySelector(".switch");
+      const switchIocn = document.querySelector(".switch-icon");
+      switchToggle.addEventListener("click", () => {
+        switchIocn.classList.toggle("move");
+      });
+    </script>
+  </body>
+</html>

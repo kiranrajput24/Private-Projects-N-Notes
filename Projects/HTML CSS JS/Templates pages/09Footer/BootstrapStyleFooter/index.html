@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Footer</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+        }
+
+        .flex-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .flex-left-right-container {
+            display: flex;
+            gap: 0 4rem;
+        }
+
+        .flex-left-container {
+            display: flex;
+            justify-content: space-between;
+
+            gap: 0.5rem;
+            flex: 1;
+        }
+
+        .flex-right-container {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .subscribe-newsletter {
+            font-size: 1.15rem;
+            line-height: 0.5rem;
+        }
+
+        .monthly-digest {
+            font-size: 0.85rem;
+        }
+
+        ul {
+            list-style: none;
+            line-height: 1.4rem;
+            font-size: 0.9rem;
+            padding: 0;
+        }
+
+        h4 {
+            margin: 0.2rem 0;
+            font-size: 1rem;
+        }
+
+        .form {
+            width: 100%;
+        }
+
+        .input-box {
+            max-width: 67%;
+            padding: 0.3rem;
+            border: 1px solid #9b8e7826;
+        }
+
+        .submit-btn {
+            max-width: 31%;
+            cursor: pointer;
+            padding: 0.3rem;
+            background-color: #0d6efd;
+            border: 1px solid white;
+            color: white;
+            border-radius: 0.3rem;
+        }
+
+        /* -----------------Bottom-------------- */
+        .flex-bottom-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 0 15rem;
+        }
+
+        div a {
+            padding: 0 0.35rem;
+            list-style: none;
+        }
+
+        /* -------------------------------------------------------------- */
+
+        /* --------------------media query---------------------------------------- */
+
+        /* -------------------------------------------------------------- */
+        @media(max-width:700px) {
+            .flex-left-right-container {
+                padding: 0;
+                margin: 0;
+                flex-direction: column;
+                gap: 0;
+            }
+
+            .flex-bottom-container {
+                flex-direction: column-reverse;
+            }
+
+            i {
+                font-size: 1.3rem;
+            }
+
+            .input-box {
+                max-width: 67%;
+            }
+        }
+
+
+        @media(max-width:360px) {
+            p {
+                font-size: 0.6rem;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-left-right-container">
+            <div class="flex-left-container">
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Section</h4>
+                        </li>
+                        <li>Home</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>FAQs</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Section</h4>
+                        </li>
+                        <li>Home</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>FAQs</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Section</h4>
+                        </li>
+                        <li>Home</li>
+                        <li>Features</li>
+                        <li>Pricing</li>
+                        <li>FAQs</li>
+                        <li>About</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flex-right-container">
+                <div class="call-to-action">
+                    <p class="subscribe-newsletter">Subscribe to our newsletter</p>
+                    <p class="monthly-digest">
+                        Monthly digest of what's new and exciting from us.
+                    </p>
+                </div>
+                <from class="form">
+                    <input type="text" class="input-box" placeholder="Email address" />
+                    <button type="submit" class="submit-btn">Subscribe</button>
+                </from>
+            </div>
+        </div>
+        <hr style="width: 80vw; opacity: 40%" />
+        <div class="flex-bottom-container">
+            <div>
+                <p>© 2023 Company, Inc. All rights reserved.</p>
+            </div>
+            <div>
+
+                <a href="./"><i class="fa-brands fa-twitter"></i></a>
+                </i>
+
+                <a href="./"> <i class="fa-brands fa-github"> </i></a>
+
+
+                <a href="./"> <i class="fa-brands fa-linkedin fa-bounce"></i></a>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/7570b8853c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

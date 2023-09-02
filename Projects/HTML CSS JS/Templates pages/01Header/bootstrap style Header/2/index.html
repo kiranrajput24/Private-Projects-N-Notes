@@ -21,7 +21,7 @@
         z-index: 2;
         padding: 0.5rem;
       }
-      .flex-container {
+      .flex-container-header {
         width: 85%;
         display: flex;
         align-items: center;
@@ -62,7 +62,7 @@
       .low-opacity {
         opacity: 40%;
       }
-      .search-input-container {
+      .search-input-container-header {
         margin-left: auto;
       }
       input {
@@ -81,11 +81,11 @@
       }
 
       @media (max-width: 990px) {
-        .flex-container {
+        .flex-container-header {
           flex-direction: column;
           align-items: center;
         }
-        .search-input-container {
+        .search-input-container-header {
           margin-left: 0;
           width: 70%;
         }
@@ -104,6 +104,7 @@
         }
         .drop-list {
           margin: 7.5rem auto auto 12rem;
+          flex-direction: column;
         }
       }
       @media (max-width: 375px) {
@@ -122,7 +123,7 @@
   </head>
   <body>
     <div class="flex-navbar">
-      <div class="flex-container">
+      <div class="flex-container-header">
         <div class="flex">
           <ul class="flex list">
             <strong>Navbar</strong>
@@ -140,7 +141,7 @@
             <li class="low-opacity">Disabled</li>
           </ul>
         </div>
-        <div class="flex search-input-container">
+        <div class="flex search-input-container-header">
           <input type="text" placeholder="Search..." />
         </div>
         <div class="flex">
