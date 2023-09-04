@@ -1,0 +1,60 @@
+<body>
+  <script>
+    var hello = "var added to window when declared in global scope";
+    document.write(window.hello);
+    tag = document.createElement("h3");
+    document.body.append(tag);
+
+    function fn2() {
+      var num2 = 2; // make it local therefore window object not access it
+      tag.textContent = window.num2;
+    }
+
+    {
+      ("---------------------------------------------------------------------------");
+    }
+    // comments
+    // direct assigned  value to variable without or var keyword inside function  not make it  global // why?????????????????/
+    //  because its a function scope and create new var , that not as global
+
+    function fn() {
+      x = " hello";
+      // scope.html:28 Uncaught ReferenceError: num2 is not defined
+    }
+    console.log(window.x); // undefined  ....  even no declaration of var in program
+    // console.log(x); //Uncaught ReferenceError: x is not defined
+    {
+      ("---------------------------------------------------------------------------");
+    }
+
+    // by var keyword we create a property for window object
+
+    var name = "Linux";
+    console.log(window.name); // work only browser
+  </script>
+
+  <!-- {"---------------------------------------------------------------------------"} -->
+
+  <!-- EveryObject that is declared in global scope added to window object that global object -->
+  <p id="demo"></p>
+
+  <script>
+    function addNumbers(x, y) {
+      return "invoked fn by window object : " + (x + y);
+    }
+
+    document.getElementById("demo").innerHTML = window.addNumbers(5, 3); // invokes the function using window object
+  </script>
+
+  <script>
+    // global scope 
+    // everything inside direct file
+    
+    // function scope() {}
+    // everything inside function 
+
+    // block scope
+
+    // everything inside {}
+  </script>
+</body>
