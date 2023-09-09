@@ -36,17 +36,28 @@ class Nurse extends HospitalEmployee {
   }
 }
 
-const nursePushpa = new Nurse("Olynyk", ["Trauma", "Pediatrics"]);
-nursePushpa.takeVacationDays(5);
-console.log(nursePushpa.remainingVacationDays);
+const nursePushpa = new Nurse("Pushpa", ["Trauma", "Pediatrics"]);
 nursePushpa.addCertification("Genetics");
+nursePushpa.takeVacationDays(5);
+
+console.log(nursePushpa._name); // accessible {normal properties}
+console.log(nursePushpa.name); // accessible  {getter}
 console.log(nursePushpa.certifications);
+console.log(nursePushpa.remainingVacationDays);
+
+
 
 class Doctor extends HospitalEmployee {
-  constructor(name, insurance) {
+  constructor(name, insurance=5) {
     super(name);
     this._insurance = insurance;
   }
+  get insurance() {
+    return this._insurance;
+  }
 }
 
-const DoctorKiran = new Doctor("Kiran");
+const DoctorKiran = new Doctor("Kiran",10);
+
+console.log(DoctorKiran.name);
+console.log(DoctorKiran.insurance);

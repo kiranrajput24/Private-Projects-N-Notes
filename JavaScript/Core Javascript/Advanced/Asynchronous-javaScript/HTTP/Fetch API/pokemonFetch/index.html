@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="flex-navbar">
+      <div class="flex-container-header">
+        <div class="flex">
+          <ul class="flex list">
+            <strong>Pokemon</strong>
+            <li>Home</li>
+            <li>Features</li>
+            <li id="toggle-list" class="low-opacity">
+              Dropdown
+              <img src="./UpArrowRed.svg" height="8" class="rotate180" />
+            </li>
+            <ul class="list drop-list hide">
+              <li>Pricing</li>
+              <li>FAQs</li>
+              <li>About</li>
+            </ul>
+            <li class="low-opacity">Disabled</li>
+          </ul>
+        </div>
+          <div class="flex search-input-container-header">
+            <input id="form-input" type="text" placeholder="Search..." />
+          </div>
+          <div class="flex">
+            <button id="search-btn">Search</button>
+          </div>
+        </div>
+    </div>
+
+    <div class="flex-pokemon-container"></div>
+  
+    <div class='footer'>
+     <div class="flex-bottom-container">
+       <div>
+         <p>© 2023 Company, Inc. All rights reserved.</p>
+        </div>
+        <div>
+          <a href="./"><i class="fa-brands fa-twitter"></i></a>
+        </i>
+        <a href="./"> <i class="fa-brands fa-github"> </i></a>
+        <a href="./"> <i class="fa-brands fa-linkedin fa-bounce"></i></a>
+      </div>
+      </div>
+  </div>
+<script src="https://kit.fontawesome.com/7570b8853c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,9 +1,19 @@
 // # Type Error
 // - reassignment of constant variable
+// - access variable like function  eg->
+let k = 10;
+k(); // TypeError: k is not a function
 
+{
+  /* <hr/> */
+}
 const a = 10;
 // a = 20; // TypeError: Assignment to constant variable.
 console.log(a);
+
+{
+  /* <hr/> */
+}
 
 // # Reference error
 // - when try to random variable that ios not in program
@@ -15,9 +25,12 @@ console.log(a);
 // console.log(b); // ReferenceError: Cannot access 'b' before initialization
 let b = 100;
 
+{
+  /* <hr/> */
+}
 
-// # Syntax Error 
+// # Syntax Error
 
-const d;
+// const d; //SyntaxError: Missing initializer in const declaration
 let c = 100;
-let c=1000;
+// let c = 1000; //SyntaxError: Identifier 'c' has already been declared
