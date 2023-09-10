@@ -16,4 +16,6 @@ npm start
 - family_export_path ="/home/kali/Pictures/";
 - friend_export_path ="/home/kali/Pictures/";
 
+- Yo Yo
+
 
